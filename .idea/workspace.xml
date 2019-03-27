@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="RRPlib:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6552dbe-3fdd-471e-a9cb-41f9f5d4e82f" name="Default" comment="update">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/core-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hdfs-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapred-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/yarn-site.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/ConfigObjDev.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/generateRegDataWithGamma.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/generateRegDataWithNormal.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/massiveRRP_App.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/partitionerApp.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/GenerateDataSet.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/GenerateRegressionData.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/Generator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/generators.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/hdfs/Operations.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/MassiveRRP.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/RRP.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/randPartitioner.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/ExponentialGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/GammaGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/LogNormalGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/NormalGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/PoissonGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/Pseudorandom.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/RandomDataGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/StandardNormalGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/StudentTGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/UniformGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/UniformGeneratorWithBound.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/WeibullGenerator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/random/XORShiftRandom.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/MultivariateRDDs.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomRDD.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomRDDs.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomVectorsRDD.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/utils/BoundedPriorityQueue.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/utils/HdfsIterator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/szu/bdi/utils/Utils.scala" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="RRP" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>RRP</find>
+      <find>-Yresolve-term-conflict:</find>
+      <find>Pseudorandom</find>
+      <find>MultivariateRDD</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="TEmara &lt;tamer@szu.edu.cn&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/RRP.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/massiveRRP.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/RRP_App.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/utils/HdfsIterator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/utils/Utils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/hdfs/Operations.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/massiveRRP_App.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/MassiveRRP.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/MLPairRDDFunctions.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/utils/BoundedPriorityQueue.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RDDFunctions.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/generators.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/RandomRDDs.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/MultivariateRDDs.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/XORShiftRandom.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/generateRegData.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/RegressionData.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/Generator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/partitionerApp.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/generateRegDataWithGamma.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/GenerateDataSet.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/randPartitioner.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/Pseudorandom.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/UniformGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/UniformGeneratorWithBound.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/NormalGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/StandardNormalGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/PoissonGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/ExponentialGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/GammaGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/LogNormalGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/WeibullGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/RandomDataGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/random/StudentTGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/Generator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomRDD.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/MultivariateRDDs.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomRDDs.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomVectorsRDD.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/generators/GenerateRegressionData.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/szu/bdi/apps/generateRegDataWithNormal.scala" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="bdi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="bdi" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="bdi" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="bdi" type="462c0819:PsiDirectoryNode" />
+              <item name="partitioner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RRPlib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RRPlib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="bdi" type="462c0819:PsiDirectoryNode" />
+              <item name="rdd" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553694554030" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.splitter.proportion" value="0.22277227" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\IdeaProjects\RRPlib\src\main\scala\szu\bdi" />
+      <recent name="D:\work\IdeaProjects\RRPlib\src\main\scala\szu\bdi\random" />
+      <recent name="D:\work\RRP\src\main\scala\szu\bdi" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="szu.bdi.random" />
+      <recent name="szu.bdi.apps" />
+      <recent name="szu.bdi.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\RRP\src\main" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../IdeaProjects/drizzle-spark-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../IdeaProjects/spark-jobserver-master" value="PREVIEW" />
+        <entry key="E:/Particle Swarm Optimization/akka-multiswarm-master" value="PREVIEW" />
+        <entry key="E:/Smile/smile-master" value="PREVIEW" />
+        <entry key="E:/coursera/Functional-Programming-Design-In-Scala-master/Week 2. Streams mine" value="PREVIEW" />
+        <entry key="E:/coursera/ScalaFun2/Week3 Functions and State" value="PREVIEW" />
+        <entry key="E:/coursera/ScalaFun2/calculator" value="PREVIEW" />
+        <entry key="E:/coursera/ScalaFun2/example" value="PREVIEW" />
+        <entry key="E:/coursera/ScalaFun2/quickcheck" value="PREVIEW" />
+        <entry key="E:/coursera/ScalaFun2/streams" value="PREVIEW" />
+        <entry key="E:/coursera/ScalaPar/example" value="PREVIEW" />
+        <entry key="E:/coursera/ScalaPar/scalashop" value="PREVIEW" />
+        <entry key="E:/coursera/scala/Coursera-Scala/forcomp" value="PREVIEW" />
+        <entry key="E:/coursera/scala/Coursera-Scala/patmat" value="PREVIEW" />
+        <entry key="E:/coursera/scala/example" value="PREVIEW" />
+        <entry key="E:/coursera/scala/funsets" value="PREVIEW" />
+        <entry key="E:/coursera/scala/objsets" value="PREVIEW" />
+        <entry key="E:/coursera/scala/recfun" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Tamer\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6552dbe-3fdd-471e-a9cb-41f9f5d4e82f" name="Default" comment="" />
+      <created>1530602143702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530602143702</updated>
+      <workItem from="1530602149676" duration="3477000" />
+      <workItem from="1530789760074" duration="1929000" />
+      <workItem from="1531118527219" duration="2903000" />
+      <workItem from="1531135165119" duration="3458000" />
+      <workItem from="1531288936258" duration="20729000" />
+      <workItem from="1531570870861" duration="702000" />
+      <workItem from="1531975604820" duration="107000" />
+      <workItem from="1553652581637" duration="343000" />
+      <workItem from="1553653677541" duration="305000" />
+      <workItem from="1553654077104" duration="2969000" />
+      <workItem from="1553669229628" duration="4135000" />
+      <workItem from="1553674491251" duration="1531000" />
+      <workItem from="1553692634861" duration="1640000" />
+    </task>
+    <task id="LOCAL-00001" summary="update massiveRRP">
+      <created>1531136234705</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531136234705</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update massiveRRP">
+      <created>1531136525081</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531136525081</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update massiveRRP">
+      <created>1531138240741</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531138240741</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update massiveRRP">
+      <created>1531138514498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531138514498</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update massiveRRP 8.15">
+      <created>1531144381739</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531144381739</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <created>1531144521127</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531144521127</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update">
+      <created>1531299106252</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531299106253</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update">
+      <created>1531375951569</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531375951569</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Creation">
+      <created>1553654208344</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1553654208344</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Creation">
+      <created>1553656692936</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553656692936</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Creation">
+      <created>1553671981267</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553671981267</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1553675136948</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553675136948</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="44228000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498998" visible="true" weight="0.28784648" />
+      <window_info id="Structure" order="1" sideWeight="0.501002" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.501002" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="SBT Console" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5063966" side_tool="true" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="File Transfer" order="10" visible="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.3293011" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49856734" weight="0.3293011" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info active="true" anchor="bottom" id="Messages" order="15" sideWeight="0.4936034" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Remote Host" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Maven" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update massiveRRP" />
+    <MESSAGE value="update massiveRRP 8.15" />
+    <MESSAGE value="Creation" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/deployment.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/hydra.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scala_compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/sbt.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/apps/test.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/utils/Utils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1262" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/utils/HdfsIterator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/apps/massiveRRP_App.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/utils/BoundedPriorityQueue.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RDDFunctions.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/SlidingRDD.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/MLPairRDDFunctions.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/generators/generators.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/XORShiftRandom.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="59" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/hdfs/Operations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="115" column="25" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/MassiveRRP.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#29#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="160" column="22" lean-forward="true" selection-start-line="160" selection-start-column="22" selection-end-line="160" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/RRP.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#29#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/Generator.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/apps/generateRegDataWithGamma.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/generators/GenerateDataSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="87" selection-start-line="56" selection-start-column="87" selection-end-line="56" selection-end-column="87" />
+          <folding>
+            <element signature="e#28#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/apps/partitionerApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="e#22#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="111" column="12" selection-start-line="111" selection-start-column="12" selection-end-line="111" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/Pseudorandom.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/UniformGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/UniformGeneratorWithBound.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/NormalGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/StandardNormalGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/PoissonGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/ExponentialGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/GammaGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/LogNormalGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/WeibullGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/StudentTGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/generators/Generator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomVectorsRDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+          <folding>
+            <element signature="e#21#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomRDDs.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-689">
+          <caret line="337" column="36" selection-start-line="337" selection-start-column="36" selection-end-line="337" selection-end-column="36" />
+          <folding>
+            <element signature="e#823#859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/random/RandomDataGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/apps/generateRegDataWithNormal.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/partitioner/randPartitioner.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/generators/GenerateRegressionData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="e#28#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/RandomRDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="117" column="94" selection-start-line="117" selection-start-column="94" selection-end-line="117" selection-end-column="94" />
+          <folding>
+            <element signature="e#823#881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/rdd/MultivariateRDDs.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="213" column="57" selection-start-line="213" selection-start-column="57" selection-end-line="213" selection-end-column="57" />
+          <folding>
+            <element signature="e#74#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/szu/bdi/generators/RegressionData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.22114453" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>RRPlib:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>RRPlib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.apache.hbase:hbase:1.2.0-cdh5.13.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
