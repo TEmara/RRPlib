@@ -44,6 +44,6 @@ finalRDD.saveAsTextFile(finalPath)
 For more details about the architecture of RRP and massive-RRP please see our
 [paper](https://doi.org/10.1016/j.jss.2018.11.007)
 
-##References 
+## References 
 [1] T. Z. Emara, J. Z. Huang, A distributed data management system to support large-scale data analysis, Journal of Systems
 and Software 148 (2019) 105-115. doi:https://doi.org/10.1016/j.jss.2018.11.007.
