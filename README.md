@@ -11,14 +11,14 @@ $ ./build/mvn -DskipTests clean package
 
 ## Illustrative Examples
 
-# Data generation
+### Data generation
 
 The generation process can be done through the command-line console. For example, in order to generate a dataset named <i>DS001</i> with the following parameters: number of features = 100, number of classes = 100, number of records = 100,000,000, and number of blocks = 1000, apply the following command line,
 ```
 $ spark-submit --class szu.bdi.apps.generateClassData RRPlib.jar DS001 100000000 100 100 1000 
 ```
 
-# Data partitioning
+### Data partitioning
 
 After generating the datasets, it can be repartitioned using RRP through the following command: 
 ```
