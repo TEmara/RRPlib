@@ -1,6 +1,3 @@
-
-
-
 package szu.bdi.generators
 
 import org.apache.hadoop.fs.{FileSystem, Path}
