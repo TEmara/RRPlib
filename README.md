@@ -2,12 +2,24 @@
 
 RRPlib is a spark library for representing HDFS blocks as a set of random sample data blocks. This Library is a valuable tool to make the analysis process of the massive data an attainable operation. It mainly has three components data generator, RRP, and massive-RRP. The purpose of the data generator component is to generate synthetic datasets for classification and regression. RRP component is an implementation example for the round-random partitioner in [1] and also the same for the massive-RRP component.
 
+## Building RRPlib
+
+RRPlib comes packaged with a self-contained Maven installation to ease building and deployment from source located under the build/ directory. This script will automatically download and setup all necessary build requirements locally within the build/ directory itself. As an example, one can build a version of RRPlib as follows:
+```
+$ ./build/mvn -DskipTests clean package
+```
+
 ## Illustrative Examples
+
+# Data generation
 
 The generation process can be done through the command-line console. For example, in order to generate a dataset named <i>DS001</i> with the following parameters: number of features = 100, number of classes = 100, number of records = 100,000,000, and number of blocks = 1000, apply the following command line,
 ```
-$ spark-submit --class szu.bdi.generators.GenerateDataSet RRPlib.jar DS001 100000000 100 100 1000 
+$ spark-submit --class szu.bdi.apps.generateClassData RRPlib.jar DS001 100000000 100 100 1000 
 ```
+
+# Data partitioning
+
 After generating the datasets, it can be repartitioned using RRP through the following command: 
 ```
 $ spark-submit --class szu.bdi.apps.partitionerApp RRPlib.jar <iDS> <oDS> <Q>
