@@ -103,7 +103,7 @@ def importDF(spark: SparkSession,strPath: String): DataFrame={
 }
 
 // Load and parse the data file, converting it to a DataFrame
-val data = importDF("DS001/part-00000")
+val data = importDF("DS001P/part-00000")
 
 // Index labels, adding metadata to the label column.
 // Fit on whole dataset to include all labels in index.
