@@ -43,7 +43,7 @@ generateMultiClasses(sc, hdfs, FinalPath, numFeatures, numRecords, numPartitions
 
 println("all done")
 ```
-For further examples to generate big data proper to regression tasks, you can find these examples, [generateRegDataWithGamma](https://github.com/TEmara/RRPlib/blob/master/src/main/scala/szu/bdi/apps/generateRegDataWithGamma.scala) and [generateRegDataWithNormal] (https://github.com/TEmara/RRPlib/blob/master/src/main/scala/szu/bdi/apps/generateRegDataWithNormal.scala).
+For further examples to generate big data proper to regression tasks, you can find these examples, [generateRegDataWithGamma](https://github.com/TEmara/RRPlib/blob/master/src/main/scala/szu/bdi/apps/generateRegDataWithGamma.scala) and [generateRegDataWithNormal](https://github.com/TEmara/RRPlib/blob/master/src/main/scala/szu/bdi/apps/generateRegDataWithNormal.scala).
 
 ### Data partitioning
 
